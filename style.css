@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Soft-violet: hsl(273, 75%, 66%);  
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    width: 375px;
+    height: 100vh;
+    margin:auto;
+    background: rgb(101,101,231);
+    background: linear-gradient(0deg, rgba(101,101,231,1) 0%, rgba(172,101,228,1) 75%);
+    position: relative;
+    margin-top: 8em;
+    z-index: 100;
+
+}
+main{
+    background-color: var(--Light-grayish-blue);
+    border-radius: 30px;
+    height: 535px;
+    width: 365px;
+    padding: 25px;
+    position: relative;
+    z-index: 150;
+    
+}
+picture{
+    align-items: center;
+
+}
+
+.fondo{
+    position: absolute;
+    left: 20%;
+    bottom: 40em;
+
+
+}
+.woman{    
+    position: absolute;
+    z-index: 1;
+    bottom: 42em;
+    left: 20%;
+}
+.text{
+    margin-top: 10em;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--Very-dark-desaturated-blue);
+}
+h4{
+    color: var(--Dark-grayish-blue);
+    font-size: 13.5px;
+}
+p {
+    color:var(--Dark-grayish-blue);
+    display: none;
+}
+.title{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    background-color: var(--Very-dark-grayish-blue);
+    height: 1px;
+    opacity: .1;
+}
+.p-active{
+    display:block;
+
+}
+.h4-activo{
+    color: black
+}
+.rotar{
+    transform: rotate(180deg);
+}
+.desktop{
+    display: none;
+}
+.box-D{
+    display: none;
+}
+
+@media (min-width: 1050px){
+    body{
+        position: relative;
+        width: 1200px;
+    }
+    .desktop{
+        display: block;
+        position: relative;
+        grid-row-start: 1;
+        
+    }
+    .desktop div{
+        position: absolute;
+    }
+    #contain{
+        position: relative;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 920px;
+        height: 510px;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    picture{
+        position: relative;
+        z-index: 140;
+    }
+    .text{
+        grid-column-start: 2;
+        margin-top: 0em;
+        margin-bottom: 4em;
+        width: 80%;
+    }
+    .text div{
+    }
+    h1{
+        text-align: left;
+        margin-bottom: 1em;
+    }
+    .fondo-D{
+        top: -17em;
+        right: 9em;
+    }
+    h4{
+        cursor: pointer;
+    }
+    h4:hover{
+        color: var(--Soft-red);
+    }
+    .btn{
+        cursor: pointer;
+    }
+    .woman-D{
+        top: 5em;
+        right: 10em;
+    }
+    .box-D{
+        display: inline;
+        z-index: 160;
+        bottom: 18em;
+        right: 82em;
+        position: absolute;
+    }
+   
+}
